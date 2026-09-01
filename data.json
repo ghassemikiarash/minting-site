@@ -1,0 +1,23 @@
+{
+  "settings": {
+    "siteTitle": "The Vault",
+    "tagline": "A private catalog of on-chain pieces."
+  },
+  "entries": [
+    {
+      "contractId": "75cda44b-8877-4957-9504-debf05dfd3d8",
+      "title": "Fabled Lynxes",
+      "description": "مینت کن حالشو ببر",
+      "imageFile": "75cda44b-8877-4957-9504-debf05dfd3d8.png",
+      "mintAmount": "100",
+      "kind": "nft",
+      "address": "0xb3942193f19190B850F78C15EcAE62efF3C3043c",
+      "symbol": "FLS19",
+      "chainId": 57073,
+      "rpcUrl": "https://rpc-gel.inkonchain.com",
+      "networkName": "Ink",
+      "currencySymbol": "ETH",
+      "explorerUrl": "https://explorer.inkonchain.com"
+    }
+  ]
+}

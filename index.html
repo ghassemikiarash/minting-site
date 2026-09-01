@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title data-bind="siteTitle">The Vault</title>
+<meta name="description" content="A private catalog of on-chain pieces." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="#/" class="wordmark" data-bind="siteTitle">The Vault</a>
+      <button id="connect-btn" class="btn-connect">Connect wallet</button>
+    </div>
+  </header>
+
+  <!-- ===== Catalog view ===== -->
+  <main id="view-catalog" class="view">
+    <section class="intro wrap">
+      <h1 data-bind="siteTitle">The Vault</h1>
+      <p class="tagline" data-bind="tagline">A private catalog of on-chain pieces.</p>
+    </section>
+    <section class="catalog wrap" id="catalog-grid"></section>
+    <p class="empty-note wrap" id="catalog-empty" style="display:none">Nothing in the catalog yet.</p>
+  </main>
+
+  <!-- ===== Piece / mint view ===== -->
+  <main id="view-piece" class="view" style="display:none">
+    <section class="piece wrap">
+      <a href="#/" class="back-link">← Back to the catalog</a>
+      <div class="piece-layout">
+        <div class="piece-image-frame">
+          <img id="piece-image" alt="" />
+        </div>
+        <div class="piece-details">
+          <span class="lot-number" id="piece-lot"></span>
+          <h1 id="piece-title"></h1>
+          <p class="piece-meta" id="piece-meta"></p>
+          <p class="piece-desc" id="piece-desc"></p>
+
+          <div class="mint-box">
+            <button id="mint-connect-btn" class="btn-primary">Connect wallet</button>
+            <button id="mint-action-btn" class="btn-primary" style="display:none">Mint</button>
+            <p class="mint-status" id="mint-status"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span id="footer-note">Connect a browser wallet (MetaMask, Rabby, or similar) to mint.</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
